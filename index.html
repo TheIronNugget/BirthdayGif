@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navCon">
+            <div class = "logo"><a href="#">Happy Birthday Maya!</a></div>
+            <ul class = "menu-list">
+                <div class="icon cancel-btn">
+                    <i class ="fas fa-times"></i>
+                </div>
+
+                <li><a onclick="alertbox(event)" data-locked="false" data-index="17" class="legbtn" href="#"><img class="maki" src='./icons/legionDeathGrey.png' width="30px"></a></li>
+
+                <li><a onclick="alertbox(event)" data-locked="false" data-index="18" class="rebtn" href="#"><img class="maki" src='./icons/reincarnationGrey.png' width="50px"></a></li>
+
+
+                <li><a onclick="alertbox(event)" data-locked="false" data-index="19" class="godbtn" href="#"><img class="maki" src='./icons/goddessDeathGrey.png' width="35px"></a></li>
+
+                <li ><a onclick="alertbox(event)" data-locked="false" data-index="20" class="txtchg" href="#">Events</a></li>
+
+                <li onclick="alertbox(event)" data-locked="false" data-index="21"><a class="txtchg2" href="#">Notes</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class ="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    
+    
+    <div class="banner">
+        <video src="videos/laughingGame2.mp4" muted loop autoplay></video>
+        
+        <img class="cont" src="./icons/Daco_5640914.png" width="70px">
+        
+        <div class="alert">
+            <span class="cbtn" onclick="off()">&times;</span>
+            Page is locked.
+        </div> 
+    </div>
+    <audio class="aplayer" controls loop autoplay>
+            <source src="./580063__szegvari__dark-scene.wav" type="audio/wav">
+          </audio> 
+    
+    <div class="starter">
+        <div class="content">
+            <div class="title">Damned</div>
+            <p>Casted from the <span class="hint1">Sun</span></p>
+            <p>They sought refuge from the Queen of Shadows.</p> 
+            <p>Where the <span class="hint2">veil</span> is weak, they wait.</p> 
+            <p>Though rare, faltering makes tears <span class="hint3">within</span> the cloth. </p>
+            <p>Prisoners of thousands of years free? Do they seek peace? Maybe cooperation?</p>
+            <p>No, they seek you.</p>
+            <p> Your <span class="hint4">vessel</span>.</p> 
+            <p>But is even that enough?</p>
+            <p>I welcome you to the journey.</p>
+            <p>A walk of death, where we fight to understand and survive.</p>
+        </div>
+    </div>
+    
+    <timer class="yesh">
+        <p id="demo"></p>
+    </timer> 
+
+    
+    
+    <script src="./script.js"></script> 
+ 
+</body>
+</html>

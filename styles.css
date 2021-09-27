@@ -1,0 +1,323 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+overflow: hidden;
+}
+
+body.continue{
+    overflow-y:scroll;
+}
+
+
+.cont{
+    position: relative;
+    left:48%;
+    top:85%;
+    z-index: 6;
+}
+.conbdr:hover{
+    display: none;
+}
+.cont:hover{
+    
+    animation: spin;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+.navCon{
+    max-width: 1250px;
+    margin:auto;
+    padding: 0px 30px;
+}
+
+.navbar{
+    position:fixed;
+    z-index: 5;
+    width:100%;
+    padding: 25px 0;
+    background: rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky{
+    padding:10px 0;
+    background: rgba(0, 0, 0,0.6);
+}
+
+.navbar .navCon{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu-list{
+    display:inline-flex;
+}
+
+.menu-list li{
+    list-style:none;
+}
+
+.navbar .logo a{
+    color:rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.navbar .logo a:hover{
+    transition: 2s;
+    color:rgb(255, 0, 0);
+}
+
+.maki:hover{
+    transition: 1s;
+    
+    animation: glowing 1300ms infinite;
+}
+/* Animations--------------------------------------------------*/
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+@keyframes glowing {
+    0% {
+      background-color: #a80505;
+      box-shadow: 0 0 3px #a80505;
+    }
+    50% {
+      background-color: #e81919;
+      box-shadow: 0 0 10px #e81919;
+    }
+    100% {
+      background-color: #a80505;
+      box-shadow: 0 0 3px #a80505;
+    }
+  }
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px rgb(253, 4, 4),
+        0 0 11px rgb(255, 0, 0),
+        0 0 19px rgb(255, 0, 0),
+        0 0 40px rgb(255, 0, 0),
+        0 0 80px rgb(255, 0, 0),
+        0 0 90px rgb(255, 0, 0),
+        0 0 100px rgb(255, 0, 0),
+        0 0 150px rgb(255, 0, 0);
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+}
+/* Animations End----------------------------------------------*/
+.menu-list li a{
+    color:rgb(255,255,255);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: all 0.7s ease;
+}
+.menu-list li a:hover{
+color:rgb(255, 217, 0);
+text-decoration:underline overline line-through;
+
+}
+
+.banner{
+    position:relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+video{
+    
+    background-attachment: fixed;
+    min-width: 100%; 
+    min-height: 100%; 
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.about{
+    padding:40px 0;
+}
+
+.content, .title{
+    font-size: 35px;
+    font-weight: 700;
+    background-color: linear-gradient(rgba(0,0,0,.5) rgba(255, 0, 0,1));
+}
+
+.about p{
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.icon{
+    color:#fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.icon.cancel-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+@media (max-width: 868px){
+    body.disabledScroll{
+        overflow: hidden;
+    }
+
+    .icon{
+        display: block;
+    }
+
+    .icon.hide{
+        display: none;
+    }
+
+    .navbar .menu-list{
+        position:fixed;
+        top:0;
+        left:-100%;
+        height:100vh;
+        width:100%;
+        max-width:400px;
+        background:rgb(17, 17, 17);
+        display:block;
+        padding: 40px 0;
+        text-align:center;
+        transition: all 0.3s ease;
+
+    }
+
+    .navbar .menu-list.active{
+        left: 0%;
+    }
+
+    .navbar .menu-list li{
+        margin-top:45px;
+    }
+    .navbar .menu-list li a{
+        font-size:23px;
+    }
+  
+}
+
+@media screen and (min-width: 601px) {
+    .content p {
+      font-size: 30px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    .content p {
+      font-size: 30px;
+    }
+  }
+.starter{
+
+    background: linear-gradient(rgb(0, 0, 0), rgb(255, 0, 0));
+    min-height: 100vh;
+    padding-top:150px;
+    
+}
+.title{
+    color:red;
+    text-align: center;
+    padding-bottom: 90px;
+    font-size: 60px;
+    
+    animation: flicker 1.5s infinite alternate;
+}
+
+.content p{
+    color:rgb(121, 121, 121);
+    text-align: center;
+    
+}
+
+
+header{
+    height:100vh;
+}
+
+ /* The alert message box */
+.alert {
+    z-index: 12;
+    visibility:hidden;
+    position: fixed;
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+}
+.alert.hidalert{
+    visibility:hidden;
+}
+.alert.visalert{
+    visibility:visible;
+}
+
+  /* The close button */
+.cbtn {
+   
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+  /* When moving the mouse over the close button */
+.cbtn:hover {
+    color: black;
+} 
+
+#demo{
+    font-size: 80px;
+    text-align: center;
+    background-color: #e81919;
+}
+
+#demo:hover{
+    transition: 1s;
+    
+    animation: glowing 500ms infinite;
+}
+.aplayer{
+    background-color: black;
+    z-index: 60;
+    top:30%;
+   opacity: 20%;
+}
+.aplayer:hover{
+    transition: 2s;
+    opacity: 80%;
+}
