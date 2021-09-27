@@ -300,24 +300,18 @@ header{
     color: black;
 } 
 
-#demo{
-    font-size: 80px;
-    text-align: center;
-    background-color: #e81919;
+.aplayer{
+opacity: 20%;
 }
 
-#demo:hover{
-    transition: 1s;
-    
-    animation: glowing 500ms infinite;
-}
-.aplayer{
-    background-color: black;
-    z-index: 60;
-    top:30%;
-   opacity: 20%;
-}
 .aplayer:hover{
-    transition: 2s;
     opacity: 80%;
+}
+.yesh{
+    text-align: center;
+    font-size: 40px;
+}
+.yesh:hover{
+    transition: 5s;
+    color: blue;
 }
