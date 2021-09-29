@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+        <div class="parallax"></div>
+        <div class="texter">
+            <p class= "same line1">Born in the winter solstice</p>
+            <p class= "same line2">Birthed from virgin</p>
+            <p class= "same line3">Accompanied by the star of the East</p>
+            <p class= "same line4">Adorned by 3 kings</p>
+            <p class= "same al line5">Teacher at 12<sup class="versenum" style="font-weight:800; font-style: italic"> 5</sup></p>
+            <p class= "same al line6">Baptized at 30 and began ministry</p>
+            <p class= "same al line7">Traveled 12 disciples</p>
+            <p class= "same al line8">Performed miracles</p>
+            <p class= "same al line9">Known as 'The Light'and many other names</p>
+            <p class= "same all line10">Betrayed</p>
+            <p class= "same all line11">Crucified</p>
+            <p class= "same all line12">Buried for 3 days</p>
+            <p class= "same all line13">Resurrected</p>
+        </div>
+        <div class="texter2 guessing">
+            <h2>Who am I?</h2>
+            <input id="myInput4" value="">
+            <button id="myBtn4" onclick="divinity()">submit</button>
+        </div>
+    </header>
+    <img class="hos" src="./pictures/Horus.png" width="200px">
+    <img class="hos2" src="./pictures/lifeankh.jpg" width="300px">
+    <footer>
+        <p>https://www.youtube.com/watch?v=nYx_5lS0MpA</p>
+    </footer>
+    <script>
+    var input = document.getElementById("myInput4");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+       event.preventDefault();
+       document.getElementById("myBtn4").click();
+      }
+    });
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>
