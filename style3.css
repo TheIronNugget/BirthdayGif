@@ -1,0 +1,86 @@
+body{
+    background-color: black;
+overflow: hidden;
+}
+
+body.continue{
+    overflow-y:scroll;
+}
+
+#myBtn4{
+    display:none;
+}
+
+
+
+.same{
+    font-size: x-large;
+    color:whitesmoke;
+}
+.al{
+    text-align: center;
+    color:whitesmoke;
+    
+}
+.al:hover{
+    transition:3s;
+    background-color: rgba(0, 0, 0,0.8);
+}
+.all{
+    text-align: end;
+}
+.texter{
+    position: absolute;
+    z-index: 1000;
+    top: 50px;
+    left: 0px;
+    width:100%;
+}
+.texter2{
+    position: absolute;
+    z-index: 1000;
+    top: 700px;
+    left: 700px;
+}
+.hos{
+    position: absolute;
+    z-index: 1000;
+    top: 350px;
+    left: 0px;
+}
+.hos2{
+    position: absolute;
+    z-index: 1000;
+    top: 50px;
+    left: 1200px;
+}
+.guessing{
+    flex-direction: column;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#myInput4{
+    width:60%;
+    
+}
+
+.parallax {
+    
+    background-image: url("./pictures/Orion.jpg");
+  
+    
+    min-height: 100vh; 
+  
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.texter2 h2{
+    color:whitesmoke;
+}
+footer{
+    height:20px;
+}
