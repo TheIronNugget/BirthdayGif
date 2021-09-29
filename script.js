@@ -16,7 +16,7 @@ const chg2Btn = document.querySelector(".txtchg2");
 
 
 /* Game var----------------------------------------------- */
-
+const guess= document.getElementById("myInput4");
 /* Game var end------------------------------------------- */
 
 
@@ -69,7 +69,7 @@ window.onscroll = ()=>{
 
 function checker(event){
     if (event.currentTarget.dataset.index==17){
-        b.setAttribute('href', './introPage.html');
+        b.setAttribute('href', './finder.html');
       }
     if (event.currentTarget.dataset.index==18){
         a.setAttribute('href', './introPage.html');
@@ -148,3 +148,12 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+
+
+function divinity(){
+    
+    if (guess.value === "jesus" || guess.value === "Jesus"){ 
+        body.classList.add("continue");
+    }
+}
