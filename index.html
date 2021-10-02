@@ -48,7 +48,10 @@
         </div> 
     </div>
     <audio class="aplayer" controls loop autoplay>
-        <source src="./580063__szegvari__dark-scene.wav" type="audio/wav">
+        <source id="aud1" src="./580063__szegvari__dark-scene.wav" type="audio/wav">
+      </audio> 
+      <audio class="aplayer2" controls >
+        <source class="aud2" src="./theCry.ogg" type="audio/ogg">
       </audio> 
     <div class="starter">
         <div class="content">
@@ -64,9 +67,22 @@
             <p>I welcome you to the journey.</p>
             <p>A walk of death, where we fight to understand and survive.</p>
         </div>
-        <timer class="yesh">
+        <!-- <timer class="yesh">
         <p id="demo"></p>
-        </timer> 
+        </timer>  -->
+        <button class="open-button" onclick="openForm()">Chat</button>
+
+    <!-- <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Chat</h1>
+
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div> -->
     </div>
     
     
