@@ -67,6 +67,7 @@ window.onscroll = ()=>{
 /* Local Storage Manager */
 if (localStorage.getItem("They")=="one"){
     body.classList.add("continue");
+imgBtn.classList.add("go");
 }
 
 if (localStorage.getItem("Getting")=="Three"){
